@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;600&family=Poppins:wght@100;400;500;600;700;800&display=swap">
+    <title>Pridance Tambwe | Web Developer & Graphic Designer</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="nav.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">PRUDENT</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open menu"><span></span></button>
+      <nav class="main-nav" aria-label="Main">
+        <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="Skills.html">Skills</a>
+          <button class="dd-toggle" type="button" aria-expanded="false" aria-label="Show skills menu"></button>
+          <ul class="dropdown">
+            <li><a href="Skills.html#html">HTML</a></li>
+            <li><a href="Skills.html#css">CSS</a></li>
+            <li><a href="Skills.html#javascript">JavaScript</a></li>
+            <li><a href="Skills.html#photoshop">Adobe Photoshop</a></li>
+            <li><a href="Skills.html#illustrator">Adobe Illustrator</a></li>
+            <li><a href="Skills.html#premiere">Adobe Premiere Pro</a></li>
+            <li><a href="Skills.html#affinity">Affinity</a></li>
+            <li><a href="Skills.html#canva">Canva</a></li>
+          </ul>
+        </li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <section id="contact" class="contact">
+        <div class="wrap">
+            <h2>Let's work together</h2>
+            <form id="f" class="form">
+                <label>Your name<input name="name" required autocomplete="name"></label>
+                <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+                <label>This message is a<select name="kind">
+                        <option>Project inquiry</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                    </select></label>
+                <label>Message<textarea name="msg" rows="5" required></textarea></label>
+                <button class="btn" type="submit">Send message</button>
+
+                <!-- The thank-you message appears here -->
+                <p id="st" role="status"></p>
+            </form>
+            <a href="tel:+256761013170"><small>Call or WhatsApp</small>+256 761 013 170</a>
+            <a href="https://github.com/prudentndeba-coder"><small>GitHub</small>prudentndeba-coder</a>
+            <a href="https://www.linkedin.com/in/pridance-tambwe-33538540b"><small>LinkedIn</small>Pridance Tambwe</a>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">&copy; 2026 Pridance Tambwe</div>
+    </footer>
+    <script src="Javascript.js"></script>
+</body>
+
+</html>
