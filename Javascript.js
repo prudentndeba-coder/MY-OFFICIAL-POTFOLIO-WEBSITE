@@ -29,7 +29,7 @@ if (form) {
   var ajaxUrl = form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stay on the page, nothing opens (no mailto)
+    //e.preventDefault(); // stay on the page, nothing opens (no mailto)
 
     clearTimeout(hideTimer);
     statusEl.style.display = "none";
